@@ -5,12 +5,14 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ["Noto Sans", ...defaultTheme.fontFamily.sans]
+        sans: ["'Noto Sans'", ...defaultTheme.fontFamily.sans],
+        serif: ["'Source Serif 4'", ...defaultTheme.fontFamily.serif]
       },
       colors: {
         "blackish-green": "#112211",
         "mint-green": "#8DD3BB",
-        slamon: "#FF8682"
+        slamon: "#FF8682",
+        "charcoal-black": "#030303"
       },
       boxShadow: {
         mintgreen: "0px 3px 3px 1px #8DD3BB"

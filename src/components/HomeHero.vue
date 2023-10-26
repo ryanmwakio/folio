@@ -14,7 +14,7 @@
       <h3 class="text-white font-normal text-xl">Ryan Mwakio</h3>
     </div>
 
-    <p class="absolute bottom-5 right-5 text-white font-extralight text-xs">
+    <p class="absolute bottom-5 right-10 text-white font-extralight text-xs">
       Welcome to the abyss.
     </p>
   </section>
