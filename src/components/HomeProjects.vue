@@ -12,10 +12,12 @@ const projects = reactive([])
 </script>
 
 <template>
-  <section class="bg-gray-300 p-10 mx-auto">
-    <div class="bg-white rounded-xl w-full px-10 py-16 container">
-      <h2 class="text-black font-normal text-5xl tracking-wide mb-7">/featured projects.</h2>
-      <p class="text-black font-light">Some of my recent works.</p>
+  <section class="bg-gray-300 p-3 md:p-10 mx-auto">
+    <div class="bg-white rounded-xl w-full px-5 md:px-10 py-16 container">
+      <h2 class="text-black font-normal text-2xl md:text-5xl tracking-wide mb-7">
+        /featured projects.
+      </h2>
+      <p class="text-black font-light text-sm md:text-normal">Some of my recent works.</p>
       <div class="">
         <vue3-horizontal-list
           :items="items"
