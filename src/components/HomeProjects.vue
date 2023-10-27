@@ -20,35 +20,35 @@ const projects = reactive([
     id: 2,
     title: "VietnamfactoryB2B",
     link: "https://vietnamfactoryb2b.com/",
-    image: "project-2.png",
+    image: "project-2.jpeg",
     description: ""
   },
   {
     id: 3,
     title: "Tunifi Music",
     link: "https://tunifi.netlify.app/",
-    image: "project-3.png",
+    image: "project-3.jpeg",
     description: ""
   },
   {
     id: 4,
     title: "Eshop",
     link: "https://eshop-it00.onrender.com/",
-    image: "project-4.png",
+    image: "project-4.jpeg",
     description: ""
   },
   {
     id: 5,
     title: "Urbancribs API",
     link: "https://urbancribs.onrender.com/",
-    image: "project-5.png",
+    image: "project-5.jpeg",
     description: ""
   },
   {
     id: 6,
     title: "Hotel UI",
     link: "https://bahariresort.netlify.app/",
-    image: "project-6.png",
+    image: "project-6.jpeg",
     description: ""
   },
   {
