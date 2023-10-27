@@ -11,9 +11,51 @@ const items = reactive(
 const projects = reactive([
   {
     id: 1,
+    title: "Golobe",
+    link: "https://world-golobe.netlify.app/",
+    image: "project-1.jpeg",
+    description: ""
+  },
+  {
+    id: 2,
+    title: "VietnamfactoryB2B",
+    link: "https://vietnamfactoryb2b.com/",
+    image: "project-2.png",
+    description: ""
+  },
+  {
+    id: 3,
+    title: "Tunifi Music",
+    link: "https://tunifi.netlify.app/",
+    image: "project-3.png",
+    description: ""
+  },
+  {
+    id: 4,
     title: "Eshop",
-    link: "",
-    image: "",
+    link: "https://eshop-it00.onrender.com/",
+    image: "project-4.png",
+    description: ""
+  },
+  {
+    id: 5,
+    title: "Urbancribs API",
+    link: "https://urbancribs.onrender.com/",
+    image: "project-5.png",
+    description: ""
+  },
+  {
+    id: 6,
+    title: "Hotel UI",
+    link: "https://bahariresort.netlify.app/",
+    image: "project-6.png",
+    description: ""
+  },
+  {
+    id: 7,
+    title: "Electronics store",
+    link: "https://r-electronics.netlify.app/",
+    image: "project-7.jpeg",
     description: ""
   }
 ])
@@ -28,23 +70,19 @@ const projects = reactive([
       <p class="text-black font-light text-sm md:text-normal">Some of my recent works.</p>
       <div class="">
         <vue3-horizontal-list
-          :items="items"
+          :items="projects"
           :options="{
             responsive: [{ end: 576, size: 1 }, { start: 576, end: 768, size: 2 }, { size: 3 }]
           }"
         >
           <template v-slot:default="{ item }">
             <div class="bg-white p-5">
-              <div class="bg-white h-40 w-full relative z-10 overflow-hidden rounded-md">
-                <img
-                  class="w-full h-full object-cover"
-                  src="https://images.unsplash.com/photo-1502945015378-0e284ca1a5be?auto=format&fit=crop&q=80&w=1470&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                  alt=""
-                />
+              <div class="bg-white h-52 w-full relative z-10 overflow-hidden rounded-md">
+                <img class="w-full h-full object-cover" :src="`/${item.image}`" alt="" />
                 <div class="overlay z-20"></div>
                 <div class="w-full flex gap-3 absolute bottom-16 justify-center items-center z-30">
                   <a
-                    href="http://"
+                    :href="item.link"
                     target="_blank"
                     rel="noopener noreferrer"
                     class="bg-white hover:bg-black hover:text-white p-3 rounded-full w-10 h-10"
@@ -86,7 +124,7 @@ const projects = reactive([
                 <p
                   class="flex w-full items-center justify-center absolute bottom-5 text-white text-sm font-medium z-30 shadow-md"
                 >
-                  Urbancribs API
+                  {{ item.title }}
                 </p>
               </div>
             </div>
