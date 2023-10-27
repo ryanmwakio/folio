@@ -15,9 +15,12 @@ const handleActive = (currentVal) => {
 
       <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
         <div
-          class="bg-white py-20 px-7 rounded-xl border"
+          class="py-20 px-7 rounded-xl border"
+          :class="{
+            'bg-charcoal-black': active == 1,
+            'bg-white': active !== 1
+          }"
           @mouseover="handleActive(1)"
-          :class="{ 'bg-black': active === 1 }"
         >
           <h1
             class="text-xl md:text-3xl mb-4 w-11/12"
@@ -76,13 +79,21 @@ const handleActive = (currentVal) => {
               :class="{ 'text-white bg-black': active !== 1, 'text-black bg-white': active === 1 }"
               >Bootstrap</span
             >
+            <span
+              class="rounded-xl py-1 px-3 text-xs"
+              :class="{ 'text-white bg-black': active !== 1, 'text-black bg-white': active === 1 }"
+              >jquery</span
+            >
           </div>
         </div>
 
         <div
-          class="bg-white py-20 px-7 rounded-xl border"
+          class="py-20 px-7 rounded-xl border"
+          :class="{
+            'bg-charcoal-black': active == 2,
+            'bg-white': active !== 2
+          }"
           @mouseover="handleActive(2)"
-          :class="{ 'bg-black': active === 2 }"
         >
           <h1
             :class="{ 'text-black': active !== 2, 'text-white': active === 2 }"
@@ -142,9 +153,12 @@ const handleActive = (currentVal) => {
         </div>
 
         <div
-          class="bg-white py-20 px-7 rounded-xl border"
+          class="py-20 px-7 rounded-xl border"
+          :class="{
+            'bg-charcoal-black': active == 3,
+            'bg-white': active !== 3
+          }"
           @mouseover="handleActive(3)"
-          :class="{ 'bg-black': active === 3 }"
         >
           <h1
             class="text-xl md:text-3xl mb-4 w-11/12"
@@ -199,11 +213,6 @@ const handleActive = (currentVal) => {
               class="rounded-xl py-1 px-3 text-xs"
               :class="{ 'text-white bg-black': active !== 3, 'text-black bg-white': active === 3 }"
               >Cpanel</span
-            >
-            <span
-              class="rounded-xl py-1 px-3 text-xs"
-              :class="{ 'text-white bg-black': active !== 3, 'text-black bg-white': active === 3 }"
-              >Load Balancing</span
             >
           </div>
         </div>
