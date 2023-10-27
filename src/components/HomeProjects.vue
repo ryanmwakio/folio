@@ -8,12 +8,20 @@ const items = reactive(
   })
 )
 
-const projects = reactive([])
+const projects = reactive([
+  {
+    id: 1,
+    title: "Eshop",
+    link: "",
+    image: "",
+    description: ""
+  }
+])
 </script>
 
 <template>
-  <section class="bg-gray-300 p-3 md:p-10 mx-auto">
-    <div class="bg-white rounded-xl w-full px-5 md:px-10 py-16 container">
+  <section class="bg-white p-3 md:p-10 mx-auto">
+    <div class="bg-white rounded-none w-full px-5 md:px-16 py-24 container">
       <h2 class="text-black font-normal text-2xl md:text-5xl tracking-wide mb-7">
         /featured projects.
       </h2>
@@ -34,12 +42,12 @@ const projects = reactive([])
                   alt=""
                 />
                 <div class="overlay z-20"></div>
-                <div class="w-full flex gap-3 absolute bottom-12 justify-center items-center z-30">
+                <div class="w-full flex gap-3 absolute bottom-16 justify-center items-center z-30">
                   <a
                     href="http://"
                     target="_blank"
                     rel="noopener noreferrer"
-                    class="bg-white hover:bg-purple-700 hover:text-white p-3 rounded-full w-10 h-10"
+                    class="bg-white hover:bg-black hover:text-white p-3 rounded-full w-10 h-10"
                   >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -58,7 +66,7 @@ const projects = reactive([])
                   </a>
 
                   <span
-                    class="bg-white hover:bg-purple-700 hover:text-white p-3 rounded-full w-10 h-10 cursor-pointer"
+                    class="bg-white hover:bg-black hover:shadow-md hover:text-white p-3 rounded-full w-10 h-10 cursor-pointer"
                     ><svg
                       xmlns="http://www.w3.org/2000/svg"
                       fill="none"
@@ -75,6 +83,11 @@ const projects = reactive([])
                     </svg>
                   </span>
                 </div>
+                <p
+                  class="flex w-full items-center justify-center absolute bottom-5 text-white text-sm font-medium z-30 shadow-md"
+                >
+                  Urbancribs API
+                </p>
               </div>
             </div>
           </template>

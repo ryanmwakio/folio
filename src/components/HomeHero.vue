@@ -8,7 +8,7 @@
       max-width: 1536px;
     "
   >
-    <div class="text-end">
+    <div class="text-center md:text-end">
       <h1 class="text-white font-medium text-5xl md:text-8xl">Portfolio</h1>
       <h3 class="text-white font-normal text-sm md:text-xl my-2">Software Developer</h3>
       <h3 class="text-white font-normal text-sm md:text-xl">Ryan Mwakio</h3>
