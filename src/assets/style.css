@@ -6,6 +6,10 @@
   transition: all 0.3s;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .card-glass-dark {
   /* From https://css.glass */
   background: rgba(0, 0, 0, 0.2);

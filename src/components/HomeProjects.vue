@@ -1,12 +1,12 @@
 <script setup>
-import { reactive } from "vue"
-import vue3HorizontalList from "vue3-horizontal-list"
+import { reactive } from "vue";
+import vue3HorizontalList from "vue3-horizontal-list";
 
 const items = reactive(
   [...Array(20).keys()].map((i) => {
-    return { i, title: `Responsive`, content: `Content` }
+    return { i, title: `Responsive`, content: `Content` };
   })
-)
+);
 
 const projects = reactive([
   {
@@ -58,16 +58,32 @@ const projects = reactive([
     image: "project-7.jpeg",
     description: ""
   }
-])
+]);
 </script>
 
 <template>
-  <section class="bg-white p-3 md:p-10 mx-auto">
-    <div class="bg-white rounded-none w-full px-5 md:px-16 py-24 container">
-      <h2 class="text-black font-normal text-2xl md:text-5xl tracking-wide mb-7">
-        /featured projects.
+  <section class="p-3 mx-auto bg-white md:p-10">
+    <div class="container w-full px-5 py-10 bg-white rounded-none md:px-16 pb-0">
+      <h2 class="text-black text-xl md:text-3xl mb-5 flex items-center gap-3">
+        <i>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="w-6 h-6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M17.593 3.322c1.1.128 1.907 1.077 1.907 2.185V21L12 17.25 4.5 21V5.507c0-1.108.806-2.057 1.907-2.185a48.507 48.507 0 0111.186 0z"
+            />
+          </svg>
+        </i>
+        featured projects.
       </h2>
-      <p class="text-black font-light text-sm md:text-normal">Some of my recent works.</p>
+      <p class="text-sm font-light text-black md:text-normal">Some of my recent works.</p>
       <div class="">
         <vue3-horizontal-list
           :items="projects"
@@ -76,16 +92,16 @@ const projects = reactive([
           }"
         >
           <template v-slot:default="{ item }">
-            <div class="bg-white p-5">
-              <div class="bg-white h-52 w-full relative z-10 overflow-hidden rounded-md">
-                <img class="w-full h-full object-cover" :src="`/${item.image}`" alt="" />
-                <div class="overlay z-20"></div>
-                <div class="w-full flex gap-3 absolute bottom-16 justify-center items-center z-30">
+            <div class="p-5 bg-white">
+              <div class="relative z-10 w-full overflow-hidden bg-white rounded-md h-64">
+                <img class="object-cover w-full h-full" :src="`/${item.image}`" alt="" />
+                <div class="z-20 overlay"></div>
+                <div class="absolute z-30 flex items-center justify-center w-full gap-3 bottom-16">
                   <a
                     :href="item.link"
                     target="_blank"
                     rel="noopener noreferrer"
-                    class="bg-white hover:bg-black hover:text-white p-3 rounded-full w-10 h-10"
+                    class="w-10 h-10 p-3 bg-white rounded-full hover:bg-charcoal-black hover:text-white"
                   >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -104,7 +120,7 @@ const projects = reactive([
                   </a>
 
                   <span
-                    class="bg-white hover:bg-black hover:shadow-md hover:text-white p-3 rounded-full w-10 h-10 cursor-pointer"
+                    class="w-10 h-10 p-3 bg-white rounded-full cursor-pointer hover:bg-charcoal-black hover:shadow-md hover:text-white"
                     ><svg
                       xmlns="http://www.w3.org/2000/svg"
                       fill="none"
@@ -122,7 +138,7 @@ const projects = reactive([
                   </span>
                 </div>
                 <p
-                  class="flex w-full items-center justify-center absolute bottom-5 text-white text-sm font-medium z-30 shadow-md"
+                  class="absolute z-30 flex items-center justify-center w-full text-sm font-medium text-white shadow-md bottom-8"
                 >
                   {{ item.title }}
                 </p>

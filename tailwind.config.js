@@ -13,6 +13,7 @@ module.exports = {
         "mint-green": "#8DD3BB",
         slamon: "#FF8682",
         "charcoal-black": "#040404"
+        //"charcoal-black": "#2CDD0D"
       },
       boxShadow: {
         mintgreen: "0px 3px 3px 1px #8DD3BB"
