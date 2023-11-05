@@ -39,7 +39,7 @@ const handleActive = (currentVal) => {
             'bg-white': active !== 1
           }"
           @mouseover="handleActive(1)"
-          v-wave
+          v-motion-slide-visible-once-bottom
         >
           <h1
             class="text-xl md:text-3xl mb-4 w-11/12"
@@ -140,7 +140,7 @@ const handleActive = (currentVal) => {
             'bg-white': active !== 2
           }"
           @mouseover="handleActive(2)"
-          v-wave
+          v-motion-slide-visible-once-bottom
         >
           <h1
             :class="{ 'text-black': active !== 2, 'text-white': active === 2 }"
@@ -230,7 +230,7 @@ const handleActive = (currentVal) => {
             'bg-white': active !== 3
           }"
           @mouseover="handleActive(3)"
-          v-wave
+          v-motion-slide-visible-once-bottom
         >
           <h1
             class="text-xl md:text-3xl mb-4 w-11/12"

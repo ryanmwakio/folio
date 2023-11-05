@@ -13,7 +13,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <div class="page-loader" v-if="!isLoaded">
+  <div class="page-loader" v-if="!isLoaded" v-motion-slide-visible-bottom>
     <div class="cube"></div>
     <div class="cube"></div>
     <div class="cube"></div>

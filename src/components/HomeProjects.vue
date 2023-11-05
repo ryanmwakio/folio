@@ -92,7 +92,7 @@ const projects = reactive([
           }"
         >
           <template v-slot:default="{ item }">
-            <div class="p-5 bg-white">
+            <div class="p-5 bg-white" v-motion-slide-visible-once-bottom>
               <div class="relative z-10 w-full overflow-hidden bg-white rounded-md h-64">
                 <img class="object-cover w-full h-full" :src="`/${item.image}`" alt="" />
                 <div class="z-20 overlay"></div>
