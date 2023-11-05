@@ -1,4 +1,6 @@
-<script setup></script>
+<script setup>
+
+</script>
 
 <template>
   <section class="bg-white md:px-5 pt-20 pb-20 mx-auto w-full" style="max-width: 1536px">
@@ -28,7 +30,7 @@
         goes on behind the scenes. This insatiable curiosity eventually led me into the world of
         technology. Today, as a software developer, I am fueled by my passion for creating software
         that brings tangible impact. I believe in the power of technology to make our world a better
-        place, and I'm dedicated to crafting digital solutions that make a difference.
+        place, and I'm dedicated to crafting digital solutions that make a  difference.
       </p>
     </div>
   </section>

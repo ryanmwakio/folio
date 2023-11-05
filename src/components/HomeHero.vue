@@ -1,7 +1,4 @@
-<script setup>
-const myImg =
-  "https://images.unsplash.com/photo-1527607976958-7cbb4a6d0131?auto=format&fit=crop&q=80&w=1394&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-</script>
+<script setup></script>
 
 <template>
   <section
@@ -10,6 +7,7 @@ const myImg =
       background: url(https://images.unsplash.com/photo-1527607976958-7cbb4a6d0131?auto=format&fit=crop&q=80&w=1394&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
       max-width: 1536px;
     "
+    v-wave
   >
     <div class="text-center md:text-end">
       <h1 class="text-5xl font-medium text-white md:text-8xl">Portfolio</h1>

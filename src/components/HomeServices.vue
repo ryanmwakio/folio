@@ -1,11 +1,11 @@
 <script setup>
-import { ref } from "vue"
+import { ref } from "vue";
 
-const active = ref(1)
+const active = ref(1);
 
 const handleActive = (currentVal) => {
-  active.value = currentVal
-}
+  active.value = currentVal;
+};
 </script>
 
 <template>
@@ -39,6 +39,7 @@ const handleActive = (currentVal) => {
             'bg-white': active !== 1
           }"
           @mouseover="handleActive(1)"
+          v-wave
         >
           <h1
             class="text-xl md:text-3xl mb-4 w-11/12"
@@ -139,6 +140,7 @@ const handleActive = (currentVal) => {
             'bg-white': active !== 2
           }"
           @mouseover="handleActive(2)"
+          v-wave
         >
           <h1
             :class="{ 'text-black': active !== 2, 'text-white': active === 2 }"
@@ -228,6 +230,7 @@ const handleActive = (currentVal) => {
             'bg-white': active !== 3
           }"
           @mouseover="handleActive(3)"
+          v-wave
         >
           <h1
             class="text-xl md:text-3xl mb-4 w-11/12"

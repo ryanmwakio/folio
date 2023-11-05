@@ -1,6 +1,9 @@
-<script setup></script>
+<script setup>
+import PageLoader from "./components/PageLoader.vue";
+</script>
 
 <template>
+  <PageLoader />
   <RouterView />
 </template>
 
