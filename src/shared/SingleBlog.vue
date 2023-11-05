@@ -1,12 +1,11 @@
 <script setup>
 import { RouterLink } from "vue-router";
-import { defineProps } from "vue";
 
 const props = defineProps(["blog"]);
 </script>
 
 <template>
-  <div class="bg-white p-3 border rounded-xl">
+  <div class="bg-white p-3 border rounded-xl" v-motion-slide-visible-once-bottom>
     <div class="rounded-md w-full object-contain overflow-hidden">
       <img :src="blog.image" alt="" class="object-contain h-full w-full rounded-md" />
     </div>

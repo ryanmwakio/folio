@@ -69,7 +69,7 @@ const blogs = reactive([
         recent blogs
       </h2>
 
-      <div class="grid grid-cols-1 md:grid-cols-4 gap-4 px-5" v-motion-slide-visible-once-bottom>
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-4 px-5" >
         <single-blog v-for="blog in blogs" :key="blog.id" :blog="blog"></single-blog>
       </div>
     </div>
