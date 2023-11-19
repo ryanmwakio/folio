@@ -84,7 +84,7 @@ const projects = reactive([
         featured projects.
       </h2>
       <p class="text-sm font-light text-black md:text-normal">Some of my recent works.</p>
-      <div class="">
+      <div class="" v-motion-slide-visible-once-bottom>
         <vue3-horizontal-list
           :items="projects"
           :options="{
@@ -92,7 +92,7 @@ const projects = reactive([
           }"
         >
           <template v-slot:default="{ item }">
-            <div class="p-5 bg-white" v-motion-slide-visible-once-bottom>
+            <div class="p-5 bg-white" >
               <div class="relative z-10 w-full overflow-hidden bg-white rounded-md h-64">
                 <img class="object-cover w-full h-full" :src="`/${item.image}`" alt="" />
                 <div class="z-20 overlay"></div>

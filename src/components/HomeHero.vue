@@ -3,6 +3,12 @@ import { ref, onMounted, onUnmounted } from "vue";
 
 const viewportWidth = ref(window.innerWidth);
 
+const japaneseText = "オタクになりましょう";
+const japaneseLetters = japaneseText.split("");
+
+const englishText = "Portfolio";
+const englishLetters = englishText.split("");
+
 const handleResize = () => {
   viewportWidth.value = window.innerWidth;
 };
@@ -30,7 +36,7 @@ let image2 =
     }"
   >
     <div class="text-center md:text-end">
-      <h1 class="text-5xl font-medium text-white md:text-8xl">Portfolio</h1>
+      <h1 class="text-5xl font-medium text-white md:text-8xl" data-portfolio>Portfolio</h1>
       <h3 class="my-2 text-sm font-normal text-white md:text-xl">Software Developer</h3>
       <h3 class="text-sm font-normal text-white md:text-xl">Ryan Mwakio</h3>
     </div>
@@ -41,4 +47,16 @@ let image2 =
   </section>
 </template>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+@keyframes xspin {
+  50% {
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+  }
+}
+
+.text-transition {
+  animation: xspin 2s; // Adjust the animation duration as needed
+  animation-fill-mode: forwards;
+}
+</style>
