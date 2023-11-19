@@ -44,8 +44,8 @@ const attendants = [
   display: flex !important;
   justify-content: center !important;
   align-items: center !important;
-  width: 100%;
-  height: 100%;
+  width: 2rem;
+  height: 2rem;
   background-color: #333333 !important;
 }
 </style>
